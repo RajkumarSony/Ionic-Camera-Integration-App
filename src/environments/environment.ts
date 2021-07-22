@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig:{
+    apiKey: "AIzaSyCUsXJjf7Y8CgiV6j8SKbYxICTi0sUstHk",
+    authDomain: "ionic-cordava-camera-app.firebaseapp.com",
+    projectId: "ionic-cordava-camera-app",
+    storageBucket: "ionic-cordava-camera-app.appspot.com",
+    messagingSenderId: "87035747786",
+    appId: "1:87035747786:web:0c82f52bac860748014333",
+    measurementId: "G-X78JXKHY1C"
+    }
 };
 
 /*

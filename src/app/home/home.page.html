@@ -1,20 +1,24 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Ionic-camera</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <br><br><br><br>
+    <center>
+      <img [src]="base64Image" width="200" height="240"/>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-fab id="pic" vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="dark">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button id="feb-btn" (click)="takePhoto(0)"><ion-icon name="image-outline"></ion-icon></ion-fab-button>
+          <ion-fab-button id="feb-btn" (click)="takePhoto(1)"><ion-icon name="camera-outline"></ion-icon></ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+    </center>
   </div>
 </ion-content>
